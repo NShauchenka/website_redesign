@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Contact Page</title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="js/jquery_validate/jquery.validate.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+      <link href="stylelist2.css" rel="stylesheet" type="text/css">
+<script>
+      $(document).ready(function() {
+        
+      $('form :text:first').focus();
+      $("#contact").validate({
+        rules: {
+          name: 'required',
+          email: {
+            required: true,
+            email: true,
+            maxlength: 100,
+            emailExt: true    
+          },
+          msg: 'required'
+        },
+        messages: {
+            name: "Please type in your name.",
+            email: {
+              required: "We need your email address to contact you",
+              email: "Your email address must be in the format of name@domain.com"
+            },
+            msg: "This field is required"  
+}
+      }); // end validate
+       
+       jQuery.validator.addMethod("emailExt", function(value, element) {
+        return this.optional( element ) || /@.*?\.(com|org|net)$/.test( value );
+        },
+        'Please enter a valid email address.');
+        }); // end ready
+      </script>
+      
+
+   </head>
+
+   <body>
+	
+		<div class="logo"><a href="home.html" class="logo"><img src="images/Art_Gallery_of_Regina [black].jpg" width="265" height="195" ></a></div>
+<nav class="menu">
+	
+	<a class="active" href="about.html">about</a>
+	
+    <a href="events.html">calendar</a>
+	
+    <a href="classes.html">classes</a>
+	
+	<a href="rent.html">event rental</a>
+	
+	<a href="give.html">give</a>
+    
+	<a href="member.html">become a member</a>
+    
+		<a href="login.html">login</a>
+</nav> 
+	   
+<div class="gold-fact">
+<div>
+<p>If you have any questions please contact us: <a href="mailto:alleducation@artsleagueoflowell.org">alleducation@artsleagueoflowell.org</a></p>
+</div>
+</div>	
+	
+<div class="form">
+ <form action="#" method="post" name="contact" id="contact">
+<fieldset>
+      <input name="name" id="name" placeholder="Your name" type="text" tabindex="1" required>
+	<label for="name"></label>
+    </fieldset>
+    <fieldset>
+      <input name="email" id="email" placeholder="Your Email Address" type="email" tabindex="2" required >
+		<label for="email"></label>
+    </fieldset>
+    <fieldset>
+      <textarea name="msg" id="msg" placeholder="Type your message here...." tabindex="5" required></textarea>
+		<label for="msg"></label>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    </form>
+    
+</div>
+	
+<div class="footer">
+	<div class="hours"><h4>Gallery Hours:</h4>
+<p>Wednesday - Saturday 12 - 6 PM</p>
+<p>Sunday 12 - 4 PM</p>
+	</div>
+	
+<div class="address"><h4>Arts League of Lowell</h4>
+<p>307 Market Street</p>
+<p>Lowell, MA 01852</p>
+<p>978-221-5018</p>
+</div>
+	<div class="footer-social-icons">
+		<h4 class="_14">Social</h4>
+        <a href="https://www.facebook.com/ArtsLeagueofLowell/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-lg fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-lg fa-instagram"></i></a>
+     <p><a href="#">Contact us</a></p>
+</div>
+</div>
+</body>
+</html>
+
+

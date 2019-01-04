@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arts League of Lowell</title>
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="stylelist2.css" rel="stylesheet" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="js/jquery_validate/jquery.validate.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script>
+      $(document).ready(function() {
+        
+      $(':text:first').focus();
+      $(".myForm").validate({
+        rules: {
+          name: {
+			  required: true,
+			maxlength: 100
+		  },
+          email: {
+            required: true,
+            maxlength: 100,
+            emailExt: true    
+          },
+          msg: 'required'
+        },
+        messages: {
+            name: "Please type in your name.",
+            email_address: {
+              required: "Please type in your email address",
+            },
+            msg: "This field is required"  
+}
+      }); // end validate
+       
+       jQuery.validator.addMethod("emailExt", function(value, element) {
+        return this.optional( element ) || /@.*?\.(com|org|net|edu)$/.test( value );
+        },
+        'Please enter a valid email address.');
+        }); // end ready
+      </script>
+      
+</head>
+
+<body>
+	
+		<div class="logo"><a href="home.html" class="logo"><img src="images/Art_Gallery_of_Regina [black].jpg" width="265" height="195" ></a></div>
+<nav class="menu">
+	
+	<a class="active" href="about.html">about</a>
+	
+    <a href="events.html">calendar</a>
+	
+    <a href="classes.html">classes</a>
+	
+	<a href="rent.html">event rental</a>
+	
+	<a href="give.html">give</a>
+    
+	<a href="member.html">become a member</a>
+    
+		<a href="login.html">login</a>
+</nav> 
+	
+	
+	<div class="gold-fact">
+
+	<div>
+
+<p><span>Elevate your next event to a work of art at the  Arts League of Lowell</span></p>
+
+	</div>
+
+</div>	
+
+	
+
+<div class="photo-rent">
+
+<img src="images/rent2.jpg" width="900" height="541" alt=""/> 
+
+</div>
+
+	
+
+<div class="photo-fact-rent">
+
+	
+
+<img class="first-photo" src="images/rent3.jpg"  alt=""/>
+
+	
+
+<div class="galleries">
+
+<dl><h3>Our Galleries</h3>
+
+<dt>Main Gallery</dt>
+
+<dd>Our versatile main gallery can accomodate 125 people standing for cocktails, 100 people for a buffet or 60 for a sit-down dinner.</dd>
+
+<dt>John Greenwald Gallery</dt>
+
+<dd>This space will comfortably accomodate 20 people for a meeting or a more intimate sit-down dinner.</dd>
+
+<dt>The Workspace</dt>
+
+<dd>For meetings, workshops or gatherings of up to 12 people. A perfect space for staging and preparation of food and drinks for a larger event.</dd>
+
+</dl>
+
+</div>
+
+	
+
+<div class="second-text-rent">
+
+<p>ALL's lively arts center and galleries are centrally located in the Gates Block building in downtown Lowell. The galleries in this classic brick building, once home to manufacturing and retail businesses, have been transformed with beautiful hardwood floors, gallery lighting and plenty of natural light from large windows.</p>
+
+<p>The galleries are always filled with ever-changing exhibits of local and regional art.</p>
+
+<p>Our three distinct rooms can be combined to provide the space that you need to host meetings, parties, bridal showers, classes, receptions, lectures and more. Renting one or all three rooms will surely provide a uniquely creative venue for your next function.</p>
+
+	<ul><h3>Our Amenities</h3>
+
+<li>Prep kitchen for catering</li>
+
+<li>Wi-Fi available</li>
+
+<li>Handicap accessible</li>
+
+<li>Loading dock access</li>
+
+<li>Friendly ALL personnel to assist you in preparation and during your event</li></ul>
+
+</div>
+
+	
+
+
+
+<img class="second-photo-rent" src="images/rent1.jpg" alt=""/>
+
+
+
+	
+
+<div class="contact-text-rent">
+
+<p>To schedule a rental, or to request a copy of our Rental Contract detailing full rental policies, please contact ALL at <a href="mailto:eventrental@artsleagueoflowell.org">eventrental@artsleagueoflowell.org</a><br>
+
+We would be delighted to show you around and discuss how to make your next event extraordinary.</p>
+
+</div>
+
+		
+
+	
+
+</div>
+
+	
+
+
+
+	
+<div class="footer">
+	<div class="hours"><h4>Gallery Hours:</h4>
+<p>Wednesday - Saturday 12 - 6 PM</p>
+<p>Sunday 12 - 4 PM</p>
+	</div>
+	
+  <div class="address"><h4>Arts League of Lowell</h4>
+<p>307 Market Street</p>
+<p>Lowell, MA 01852</p>
+<p>978-221-5018</p>
+  </div>
+	<div class="footer-social-icons">
+		<h4 class="_14">Social</h4>
+         <a href="https://www.facebook.com/ArtsLeagueofLowell/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
+		 <a href="https://twitter.com" target="_blank"><i class="fa fa-lg fa-twitter" ></i></a>
+         <a href="https://www.instagram.com" target="_blank"><i class="fa fa-lg fa-instagram" ></i></a>
+     <p><a rel="modal:open" href="#contact-form">Contact us</a></p>
+		 <div id="contact-form" class="modal">
+			<div style="border-top: solid 2px #c5b358">
+<p style="text-align: center">If you have any questions please contact us: <a href="mailto:alleducation@artsleagueoflowell.org" style="text-transform: none">alleducation@artsleagueoflowell.org</a></p>
+</div>
+ <form class="myForm">
+  <label for="name">Name </label>
+  <input type="text" name="name" id="name" class="required">
+  <label for="email_address">Email </label>
+  <input type="email" name="email_address" id="email_address" class="required emailExt">
+  <label for="comments">Message</label>
+  <textarea name="message" id="msg" maxlength="500" rows="10" class="required"></textarea>
+  <button class="btn">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
+

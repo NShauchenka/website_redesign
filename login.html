@@ -1,0 +1,385 @@
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Arts League of Lowell</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="stylelist2.css" rel="stylesheet" type="text/css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+	<script src="js/jquery_validate/jquery.validate.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<script>
+
+      $(document).ready(function() {
+
+        
+
+      $("form").each(function() {
+
+			$(this).validate({
+
+        rules: {
+
+          name: {
+
+			  required: true,
+
+			maxlength: 100
+
+		  },
+
+          email: {
+
+            required: true,
+
+            maxlength: 100,
+
+            emailExt: true    
+
+          },
+
+          msg: 'required',
+
+		  psw: 'required',
+
+			psw_signup: {
+
+				required: true,
+
+				rangelength: [8,16]
+
+			},
+
+			psw_repeat: {
+
+				equalTo: '#psw_signup'
+
+			}
+
+        },
+
+        messages: {
+
+            name: "Please type in your name.",
+
+            email: {
+
+              required: "Please type in your email address",
+
+				emailExt: "This is not a valid email",
+
+            },
+
+            msg: "This field is required",
+
+			psw: "This field is required",
+
+			psw_signup: {
+
+				required: "This field is required",
+
+				rangelength: "Password must be between 8 and 16 characters long."
+
+			},
+
+			psw_repeat: {
+
+				equalTo: "The two passwords don't match."
+
+			},
+
+			
+
+}
+
+      }); // end validate
+
+		  }); // end each
+
+       
+
+       jQuery.validator.addMethod("emailExt", function(value, element) {
+
+        return this.optional( element ) || /@.*?\.(com|org|net|edu)$/.test( value );
+
+        },
+
+        'Please enter a valid email address.');  
+
+		
+
+        }); // end ready
+
+      </script>
+
+      
+
+</head>
+
+
+
+<body>
+
+	
+
+		<div class="logo"><a href="home.html" class="logo"><img src="images/Art_Gallery_of_Regina [black].jpg" width="265" height="195" ></a></div>
+
+<nav class="menu">
+
+	
+
+	<a class="active" href="about.html">about</a>
+
+	
+
+    <a href="events.html">calendar</a>
+
+	
+
+    <a href="classes.html">classes</a>
+
+	
+
+	<a href="rent.html">event rental</a>
+
+	
+
+	<a href="give.html">give</a>
+
+    
+
+	<a href="member.html">become a member</a>
+
+    
+
+		<a href="login.html">login</a>
+
+</nav> 
+
+	
+
+	
+
+	<div class="gold-fact">
+
+	<div>
+
+<p></p>
+
+	</div>
+
+</div>	
+
+	
+
+	
+
+<div class="form-login">
+
+<form action="action_page.php">
+
+  <div class="container">
+
+    <h1>Member<br>Log In</h1>
+
+    <hr>
+
+    <label for="email"><b>Email (Username)</b></label>
+
+    <input type="text" name="email" class="required">
+
+
+
+    <label for="psw"><b>Password</b></label>
+
+    <input type="password" name="psw" id="psw" class="required">
+
+
+
+    <button type="submit">Login</button>
+
+    <label>
+
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+
+    </label>
+
+  </div>
+
+  <div class="container2">
+
+    <button type="button" class="cancelbtn">Cancel</button>
+
+    <span class="psw"><a href="reset.html">Forgot password?</a></span>
+
+  </div>
+
+</form>
+
+	
+
+</div>
+
+	
+
+	<div class="form-signup">
+
+<form action="action_page.php">
+
+  <div class="container">  
+
+    <h1>Sign Up</h1>
+
+    <p>Please fill in this form to create an account.</p>
+
+    <hr>
+
+		
+
+    <label for="email"><b>Email</b></label>
+
+    <input type="text" name="email" class="required">
+
+
+
+    <label for="psw_signup"><b>Password (8 - 16 characters long)</b></label>
+
+    <input type="password" name="psw_signup" class="required" id="psw_signup">
+
+
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+
+    <input type="password" name="psw_repeat" id="psw_repeat" class="required">
+
+
+
+    <label>
+
+    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+
+    </label>
+
+
+
+    <p class="terms">By creating an account you agree to our <a href="terms.html" target="_blank"> Terms & Privacy.</a></p>
+
+
+
+    <div class="clearfix">
+
+      <button type="button" class="cancelbtn-signup">Cancel</button>
+
+      <button type="submit" class="signupbtn">Sign Up</button>
+
+    </div>
+
+  </div>
+
+</form>
+
+	
+
+</div>
+
+	
+
+
+
+<div class="footer">
+
+	<div class="hours"><h4>Gallery Hours:</h4>
+
+<p>Wednesday - Saturday 12 - 6 PM</p>
+
+<p>Sunday 12 - 4 PM</p>
+
+	</div>
+
+	
+
+  <div class="address"><h4>Arts League of Lowell</h4>
+
+<p>307 Market Street</p>
+
+<p>Lowell, MA 01852</p>
+
+<p>978-221-5018</p>
+
+  </div>
+
+	<div class="footer-social-icons">
+
+		<h4 class="_14">Social</h4>
+
+        <a href="https://www.facebook.com/ArtsLeagueofLowell/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
+
+		<a href="https://twitter.com" target="_blank"><i class="fa fa-lg fa-twitter" ></i></a>
+
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-lg fa-instagram" ></i></a>
+
+     <p><a rel="modal:open" href="#contact-form">Contact us</a></p>
+
+		 <div id="contact-form" class="modal">
+
+			<div style="border-top: solid 2px #c5b358">
+
+<p style="text-align: center">If you have any questions please contact us: <a href="mailto:alleducation@artsleagueoflowell.org" style="text-transform: none">alleducation@artsleagueoflowell.org</a></p>
+
+</div>
+
+ <form class="myForm">
+
+	 <div id="contacts">
+
+  <label for="name">Name &#x2a; </label>
+
+  <input type="text" name="name" id="name" class="required">
+
+  <label for="email">Email &#x2a; </label>
+
+  <input type="email" name="email" id="email" class="required emailExt">
+
+  <label for="comments">Message &#x2a;</label>
+
+  <textarea name="message" id="msg" maxlength="500" rows="10" class="required"></textarea>
+
+		 </div>
+
+  <button class="btn">Submit</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

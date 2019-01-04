@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arts League of Lowell</title>
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="stylelist2.css" rel="stylesheet" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="js/jquery_validate/jquery.validate.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script>
+      $(document).ready(function() {
+        
+      $(':text:first').focus();
+      $(".myForm").validate({
+        rules: {
+          name: {
+			  required: true,
+			maxlength: 100
+		  },
+          email: {
+            required: true,
+            maxlength: 100,
+            emailExt: true    
+          },
+          msg: 'required'
+        },
+        messages: {
+            name: "Please type in your name.",
+            email_address: {
+              required: "Please type in your email address",
+            },
+            msg: "This field is required"  
+}
+      }); // end validate
+       
+       jQuery.validator.addMethod("emailExt", function(value, element) {
+        return this.optional( element ) || /@.*?\.(com|org|net|edu)$/.test( value );
+        },
+        'Please enter a valid email address.');
+        }); // end ready
+      </script>
+      
+</head>
+
+<body>
+	
+		<div class="logo"><a href="home.html" class="logo"><img src="images/Art_Gallery_of_Regina [black].jpg" width="265" height="195" ></a></div>
+<nav class="menu">
+	
+	<a class="active" href="about.html">about</a>
+	
+    <a href="events.html">calendar</a>
+	
+    <a href="classes.html">classes</a>
+	
+	<a href="rent.html">event rental</a>
+	
+	<a href="give.html">give</a>
+    
+	<a href="member.html">become a member</a>
+    
+		<a href="login.html">login</a>
+</nav> 
+	
+	
+	<div class="gold-fact">
+	<div>
+<p><span>ALL Gallery is grateful for the generosity of its supporters.<br>Your donation can make the difference for our long-term success. Please donate whatever you can.<br> No amount is too small. Then watch us grow and succeed. You won't be disappointed.</span></p>
+	</div>
+</div>	
+	
+	
+<div class="photo-fact-give">
+
+	
+<div class="second-text-give">	
+<h3>Welcome to our new home!</h3>
+<p>May 2014 marked our first full year in our new home, at 307 Market St., in downtown Lowell. 2014 also marks the Arts League of Lowell's 10-year anniversary! We have been doing great things over the past 10 years, all in the support of the arts in and around Lowell. As you can imagine, virtually everything we do costs money, and we look to you, our wonderful supporters for help. Your donation of any amount will help us continue our work. Click the donate button below to join your friends and neighbors in supporting our beautiful new galley and classrooms, and the arts community we're all a part of. For years, we've been moving our gallery around the downtown area - moving 5 times in 9 years. Finally, we have a place to call our own...and it's wonderful!</p>
+<ul>
+<li>We have a new and beautiful gallery for artists to display work, musicians to play, dancers to dance, actors to act and poets to read.</li>
+<li>We have a cooperative gallery for members to show their work on a full-time basis.</li>
+<li>We have two bright, new classrooms to hold classes and workshops for everyone - beginners to masters - in a wide variety of arts-related subjects.</li>
+<li>We have event space to rent to the community for public and private functions.</li>
+	</ul>
+<p>This is a vibrant and busy place for members of ALL and the Greater Lowell Community to gather and to share ideas. But now we have day-to-day operational expenses to go along with our new home. A lot of our expenses - rent, utilities, maintenance, capital equipment - are covered through membership dues, co-op fees and sales commissions, but we still run a bit short each month we are open.</p>
+</div>	
+	
+<div class="note-give">
+<p>ALL is a 501 (c) (3) nonprofit organization. Your contribution is tax-deductible to the extent allowed by law. No goods or services were provided in exchange for your generous financial donation.</p>
+</div>
+
+	
+<div class="second-photo-give" >
+<img src="images/give.jpg" alt=""/>
+	<p>In Train View by Bonnie Bailey-Arden</p>
+	</div>
+	
+<div class="donate-give">
+<button type="button" class="btn" style="width:80%" onclick="window.open('https://www.paypal.com/us/home', '_blank')"><i class="fa fa-2x fa-check"></i>Donate now</button>
+<p id="center"><span>Please note:</span> You do not need a PayPal account to donate using your credit card. Once you have filled out the amount of your donation, look for the Continue link to complete your credit card donation.</p>
+</div>
+		
+	
+</div>
+	
+
+	
+<div class="footer">
+	<div class="hours"><h4>Gallery Hours:</h4>
+<p>Wednesday - Saturday 12 - 6 PM</p>
+<p>Sunday 12 - 4 PM</p>
+	</div>
+	
+  <div class="address"><h4>Arts League of Lowell</h4>
+<p>307 Market Street</p>
+<p>Lowell, MA 01852</p>
+<p>978-221-5018</p>
+  </div>
+	<div class="footer-social-icons">
+		<h4 class="_14">Social</h4>
+         <a href="https://www.facebook.com/ArtsLeagueofLowell/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
+
+		<a href="https://twitter.com" target="_blank"><i class="fa fa-lg fa-twitter" ></i></a>
+
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-lg fa-instagram" ></i></a>
+     <p><a rel="modal:open" href="#contact-form">Contact us</a></p>
+		 <div id="contact-form" class="modal">
+			<div style="border-top: solid 2px #c5b358">
+<p style="text-align: center">If you have any questions please contact us: <a href="mailto:alleducation@artsleagueoflowell.org" style="text-transform: none">alleducation@artsleagueoflowell.org</a></p>
+</div>
+ <form class="myForm">
+	 <div id="contacts">
+  <label for="name">Name </label>
+  <input type="text" name="name" id="name" class="required">
+  <label for="email_address">Email </label>
+  <input type="email" name="email_address" id="email_address" class="required emailExt">
+  <label for="comments">Message</label>
+  <textarea name="message" id="msg" maxlength="500" rows="10" class="required"></textarea>
+		 </div>
+  <button class="btn">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+

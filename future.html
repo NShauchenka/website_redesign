@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arts League of Lowell</title>
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="js/jquery_validate/jquery.validate.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="stylelist2.css" rel="stylesheet" type="text/css">
+<script>
+      $(document).ready(function() {
+        
+      $(':text:first').focus();
+      $(".myForm").validate({
+        rules: {
+          name: {
+			  required: true,
+			maxlength: 100
+		  },
+          email: {
+            required: true,
+            maxlength: 100,
+            emailExt: true    
+          },
+          msg: 'required'
+        },
+        messages: {
+            name: "Please type in your name.",
+            email_address: {
+              required: "Please type in your email address",
+            },
+            msg: "This field is required"  
+}
+      }); // end validate
+       
+       jQuery.validator.addMethod("emailExt", function(value, element) {
+        return this.optional( element ) || /@.*?\.(com|org|net|edu)$/.test( value );
+        },
+        'Please enter a valid email address.');
+        }); // end ready
+      </script>
+      
+</head>
+
+<body>
+	
+		<div class="logo"><a href="home.html" class="logo"><img src="images/Art_Gallery_of_Regina [black].jpg" width="265" height="195" ></a></div>
+<nav class="menu">
+	
+	<a class="active" href="about.html">about</a>
+	
+    <a href="events.html">calendar</a>
+	
+    <a href="classes.html">classes</a>
+	
+	<a href="rent.html">event rental</a>
+	
+	<a href="give.html">give</a>
+    
+	<a href="member.html">become a member</a>
+    
+		<a href="login.html">login</a>
+</nav> 
+	
+	
+	<div class="gold-fact">
+	<div>
+<p><span>ALL Arts Gallery 2018 / 2019 Exhibition Schedule</span></p>
+	</div>
+</div>	
+	
+	
+<div id="future_list">
+ <div class="item-name"><h3>Naked</h3>
+<p>(Open)<br>
+About or relating to the human form</p></div>
+<div class="item-date"><p>January 12 - February 11<br>
+Artists' Reception: Jan. 20, 4-6 PM<br>
+Snow date: Jan. 27</p></div>
+<div class="item-links"><a href="2018/prospectus_Naked_2018.pdf" target="_blank">prospectus_pdf</a><br> <a href="2018/prospectus_Naked_2018.doc" target="_blank">prospectus_doc</a></div>
+	
+<div class="item-name"><h3>Burning Minds</h3>
+<p>(UML student exhibit)<br>
+Invitational student artwork</p></div>
+<div class="item-date"><p>February 11 - March 4<br>
+Artists' Reception: TBD<br></p></div>
+<div class="item-links">***</div>
+	
+<div class="item-name"><h3>Honoring Gaia: Mother Earth</h3>
+<p>(Open)<br>
+The changing earth and mythology</p></div>
+<div class="item-date"><p>March 9 - April 22<br>
+Artists' Reception: March 24, 4-6 PM</p></div>
+<div class="item-links"><a href="2018/prospectus_HonoringGaia_2018.pdf" target="_blank">prospectus_pdf</a><br> <a href="2018/prospectus_HonoringGaia_2018.doc" target="_blank">prospectus_doc</a></div>
+
+<div class="item-name"><h3>From all sides</h3>
+<p>(Open juried)<br>
+3D artworks</p></div>
+<div class="item-date"><p>April 27 - June 10<br>
+Artists' Reception: May 12, 4-6 PM</p></div>
+<div class="item-links"><a href="2018/prospectus_FromALLSides_2018.pdf" target="_blank">prospectus_pdf</a><br> <a href="2018/prospectus_FromALLSides_2018.doc" target="_blank">prospectus_doc</a><br>
+</div>
+
+
+<div class="item-name"><h3>New England</h3>
+<p>(ALL members)<br>
+2D &amp; 3D scenes of New England</p></div>
+<div class="item-date"><p>June15 - August 5<br>
+Artists' Reception: June 23, 4-6 PM</p></div>
+<div class="item-links"><a href="2018/Prospectus_NewEngland_2018.pdf" target="_blank">prospectus_pdf</a><br> <a href="2018/Prospectus_NewEngland_2018.doc" target="_blank">prospectus_doc</a></div>
+
+
+<div class="item-name"><h3>Variations in scale</h3>
+<p>(Open)<br>
+Large 2D &amp; small 3D works</p></div>
+<div class="item-date"><p>August 10 - September 23<br>
+Artists' Reception: August 18, 4-6 PM</p></div>
+<div class="item-links"><a href="http://www.artsleagueoflowell.org/gallerydocs/2018/prospectus_Variations_2018.pdf" target="_blank">prospectus_pdf</a><br> <a href="2018/prospectus_Variations_2018.doc" target="_blank">prospectus_doc</a></div>
+
+
+<div class="item-name"><h3>Journeys</h3>
+<p>(Open juried)<br>
+Art that references real or abstract journeys</p></div>
+<div class="item-date"><p>September 28 - November 11<br>
+	Artists' Reception: Oct. 13, 4-6 PM</p></div>
+<div class="item-links"><a href="2018/prospectus_Journeys_2018.pdf" target="_blank">prospectus_pdf</a><br> <a href="2018/prospectus_Journeys_2018.doc" target="_blank">prospectus_doc</a></div>
+
+
+<div class="item-name"><h3>100 &amp; Below</h3>
+<p>(ALL members)<br>
+All media cash &amp; carry w/price restriction</p></div>
+<div class="item-date"><p>November 16 - January 6, 2019<br>
+Artists' Reception: Dec. 8, 6-8 PM</p></div>
+<div class="item-links"><a href="2018/Prospectus_100Below_2018.pdf" target="_blank">prospectus_pdf</a><br> <a href="2018/Prospectus_100Below_2018.doc" target="_blank">prospectus_doc</a>
+</div>
+	
+<div class="item-name"><h3>Hint of Spring (2019)</h3>
+<p>(open)<br>
+2D & 3D all media works with visions of Spring</p></div>
+<div class="item-date"><p>January 11 - February 24<br>
+Artists' Reception: Jan. 19, 4-6 PM<br>
+	Snow date: Jan. 26</p></div>
+<div class="item-links"><a href="2018/Prospectus_HINTofSPRING.pdf" target="_blank">prospectus_pdf</a><br> <a href="2018/Prospectus_HINTofSPRING.doc" target="_blank">prospectus_doc</a>
+</div>
+	
+<div class="item-name"><h3>Drawn to it: Line and Shade (2019)</h3>
+<p>(open)<br>
+Art drawings</p></div>
+<div class="item-date"><p>March 1 - April 14<br>
+Artists' Reception: March 9, 4-6 PM</p></div>
+<div class="item-links">***</a>
+</div>
+	
+<div class="item-name"><h3>Chess, Checkers and cards (2019)</h3>
+<p>(open)<br>
+2D & 3D all media works of parlor games & game players</p></div>
+<div class="item-date"><p>April 19 - June 2<br>
+Artists' Reception: April 27, 4-6 PM</p></div>
+<div class="item-links">***</a>
+</div>
+</div>
+
+<div class="back-link"><a href="events.html">Back to Calendar</a></div>
+
+<div class="footer">
+	<div class="hours"><h4>Gallery Hours:</h4>
+<p>Wednesday - Saturday 12 - 6 PM</p>
+<p>Sunday 12 - 4 PM</p>
+	</div>
+	
+  <div class="address"><h4>Arts League of Lowell</h4>
+<p>307 Market Street</p>
+<p>Lowell, MA 01852</p>
+<p>978-221-5018</p>
+  </div>
+	<div class="footer-social-icons">
+		<h4 class="_14">Social</h4>
+         <a href="https://www.facebook.com/ArtsLeagueofLowell/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
+		<a href="https://twitter.com" target="_blank"><i class="fa fa-lg fa-twitter" ></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-lg fa-instagram" ></i></a>
+     <p><a rel="modal:open" href="#contact-form">Contact us</a></p>
+		 <div id="contact-form" class="modal">
+			<div style="border-top: solid 2px #c5b358">
+<p style="text-align: center">If you have any questions please contact us: <a href="mailto:alleducation@artsleagueoflowell.org" style="text-transform: none">alleducation@artsleagueoflowell.org</a></p>
+</div>
+ <form class="myForm">
+	 <div id="contacts">
+  <label for="name">Name </label>
+  <input type="text" name="name" id="name" class="required">
+  <label for="email_address">Email </label>
+  <input type="email" name="email_address" id="email_address" class="required emailExt">
+  <label for="comments">Message</label>
+  <textarea name="message" id="msg" maxlength="500" rows="10" class="required"></textarea>
+		 </div>
+  <button class="btn">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
